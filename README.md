@@ -6,27 +6,27 @@ De los retos anteriores seleciones 3 funciones y escribalas en forma de lambdas.
 1. calcular el factorial de un número ingresado por el usuario.
 
        if __name__ == "__main__":
-           a = int(input("Ingrese número a: "))
+           a = int(input("Ingrese número : "))   #  Se Solicita ingresar un número 
   
-           factorial = lambda n: 1 if n == 0 else n * factorial(n-1)
-           for b in range(1, a+1):
+           factorial = lambda n: 1 if n == 0 else n * factorial(n-1)  # Se define una función lambda para calcular el factorial de un número
+           for b in range(1, a+1):  # Se itera sobre los valores del rango 1 a a+1 y calcular el producto de los valores
                resultado = 1 
                resultado *= b
-
+        # se calcula y se mostraraimprimiendo el resultado final del factorial 
        print(factorial(resultado))
        
        
 2.  Calcular la potencia de dos elevado a un numero n ingresado 
 
         if __name__ == "__main__":
-            n = int(input("Ingrese un número: "))
+            n = int(input("Ingrese un número: "))    #  Se Solicita ingresar un número 
   
-            cuadrado = lambda x: 1 if x == 0 else 2**cuadrado(x-1)
+            cuadrado = lambda x: 1 if x == 0 else 2**cuadrado(x-1)   # Definir una función lambda para calcular la potencia de 2 elevada al cuadrado
   
-            for u in range(1,n+1): 
-                resultado= 2**u
-
-        print(resultado)
+            for u in range(1,n+1):  # se itera sobre los valores del rango 1 a n+1
+                resultado= 2**u   #  Se calcula la potencia de 2 elevada a u y  el resultado es almacenado en la variable resultado
+                
+        print(resultado)  # Se imprimir el valor final de resultado
         
         
 3. Calcular la potencia de un numero x ingresado elvado a n ingresada 
