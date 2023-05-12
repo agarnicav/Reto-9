@@ -98,43 +98,67 @@ De los retos anteriores seleciones 3 funciones y escribalas con argumentos no de
 
 # 3 Punto 
 Escriba una función recursiva para calcular la operación de la potencia.
+    
+    def potencia(base, exponente)-> int:  # Definimos la funcion para hallar la potencia
+        if exponente == 0:  # Se declaran los casos bases 
+        return 1
+        elif exponente == 1:
+        return base
+    
+    
+         else:
+        _potencia = base**exponente
+        return _potencia
+        
+    if __name__ == "__main__":
+        n = int(input("Ingrese numero base: "))
+        x = int(input("Ingrese numero exponente : "))
+        Potencia_num = potencia(n,x)
+  
+        print("La potencia de " + str(n) + " elevado a " + str(x) + " es " + str(Potencia_num))
 
 # 4 Punto 
 
-Utilice la siguiente plantilla de code para contar el tiempo:
-import time
-start_time = time.time()
-# instrucciones sobre las cuales se quiere medir tiempo de ejecución
-end_time = time.time()
+Utilice la  plantilla de code para contar el tiempo:
+         
+    import time
+    start_time = time.time()
+    # instrucciones sobre las cuales se quiere medir tiempo de ejecución
+    end_time = time.time()
 
-timer = end_time - start_time
-print(timer)
+    timer = end_time - start_time
+    print(timer)
+    
 Realice pruebas para calcular fibonacci con iteración o con recursión. Determine desde que número de la serie la diferencia de tiempo se vuelve significativa. Importante: Revisar este hilo.
 
-def fibonacci_Recursivo(n : int )-> int:
-  if n <=1:
-    # caso base
-    return 1
-  else:
-    # condicion
-    return fibonacci_Recursivo(n-1)+fibonacci_Recursivo(n-2)  
+Codigo: 
 
-if __name__ == "__main__":
-  num = int(input("Ingrese numero: "))
-  serieFibo = fibonacci_Recursivo(num)
-  print("La serie de Fibonacci hasta " + str(num) + " es " + str(serieFibo))
+    def fibonacci_Recursivo(n : int )-> int:
+        if n <=1: # caso base
+            return 1
+        else: 
+            return fibonacci_Recursivo(n-1)+fibonacci_Recursivo(n-2)  
+
+    if __name__ == "__main__":
+        num = int(input("Ingrese numero: "))
+        serieFibo = fibonacci_Recursivo(num)
+    print("La serie de Fibonacci hasta " + str(num) + " es " + str(serieFibo))
   
-import time
+    import time
 
-start_time = time.time()
-fibonacci_Recursivo(30)
-end_time = time.time()
+    start_time = time.time()
+    fibonacci_Recursivo(30)
+    end_time = time.time()
 
-timer_recursivo = end_time - start_time
-
-
-print("Tiempo de ejecución del algoritmo recursivo: ", timer_recursivo)
+    timer_recursivo = end_time - start_time
 
 
-Crear cuenta en stackoverflow y adjuntar imagen en el repo
+    print("Tiempo de ejecución del algoritmo recursivo: ", timer_recursivo)
+
+
+### Cuenta Starkoverflow
+![Stackoverflow](https://github.com/agarnicav/Reto-9/assets/124607325/b5636837-2327-44e3-845d-b9a657453c3d)
+
+### Perfil linkedin
+https://www.linkedin.com/in/ana-maria-garnica-vargas-6b7555276/
 
